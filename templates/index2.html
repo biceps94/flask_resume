@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+
+{% block content %}
+<!-- Everything that's written in between block content/endblock gets transfered to base.html -->
+
+<br/>
+<center>
+	<h1>Hello {{ f_name}}!!</h1>
+<br/>
+{{ fav_pizza }}
+<br/>
+<ol>
+{% for topping in fav_pizza %}
+
+	<li>{{ topping }}</li>
+
+{% endfor %}
+
+</ol>
+
+
+</center>
+
+<br/><br/>
+
+
+
+{% endblock %}
